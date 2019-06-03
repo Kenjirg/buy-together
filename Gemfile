@@ -34,7 +34,8 @@ gem 'carrierwave', '~>1.0'
 # authentication
 gem 'devise'
 gem 'omniauth-facebook'
-
+# form
+gem 'cocoon'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
