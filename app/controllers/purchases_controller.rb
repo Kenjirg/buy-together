@@ -4,7 +4,8 @@ class PurchasesController < ApplicationController
 		@purchases=Purchase.all
 	end
 	def show
-		@purchase=Purchase.find params[:id]		
+		@purchase=Purchase.find params[:id]
+		@order=Order.find_by(user: current_user, purchase: @purchase)
 	end
 	def new
 		@purchase=Purchase.new
