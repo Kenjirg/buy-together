@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :stores do
   	resources :items
   end
-  resources :purchases
+  resources :purchases do
+  	resources :orders
+  end
   get '/user_ck' => 'pages#user_ck',as: 'user_ck'
 end

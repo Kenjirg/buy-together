@@ -17,4 +17,5 @@ class User < ApplicationRecord
 	end
   # relationship
   has_many :purchases
+  has_many :orders
 end
