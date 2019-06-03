@@ -15,4 +15,6 @@ class User < ApplicationRecord
 			# user.skip_confirmation!
 		end
 	end
+  # relationship
+  has_many :purchases
 end
